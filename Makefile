@@ -1,6 +1,6 @@
-CFLAGS = -std=c99 -Wall -g 
+FLAGS = -std=c++11 -O2 -Wall
 
-project: project.h main.cpp arithmetic.cpp; g++ -std=c++11 -O2 -Wall project.h main.cpp arithmetic.cpp -o project 
+project: project.h main.cpp arithmetic.cpp; g++ $(FLAGS) $? -o $@ 
 
 .PHONY: format
 format: ; astyle -A3 *.cpp && rm *.orig
