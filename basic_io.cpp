@@ -7,21 +7,24 @@ using namespace std;
  * Simple I/O functions.
  */
 
-int printArrayFromCIN(){
+int printArrayFromCIN()
+{
     string x;
-    while ( cin >> x ){
-       cout << "Processing " << x << '\n'; 
+    while ( cin >> x ) {
+        cout << "Processing " << x << '\n';
     }
     return 0;
 }
 
-int grabIntFromCIN(){
+int grabIntFromCIN()
+{
     int x = 0;
     cin >> x;
     return x;
 }
 
-string grabLineFromCIN(){
+string grabLineFromCIN()
+{
     string s = "";
     getline(cin, s);
     return s;
