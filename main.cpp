@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
 #include "project.h"
 
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello, World!\n";
-    std::cout << "3+4 = " << add(3,4) << '\n';
+    cout << "Hello, World!\n";
+    cout << "3+4 = " << add(3,4) << '\n';
+    int x = grabIntFromCIN();
+    cout << "Int: " << x << '\n';
     return 0;
 }
